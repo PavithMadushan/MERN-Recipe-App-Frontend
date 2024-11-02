@@ -40,7 +40,7 @@ function App() {
 
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5000/api/user/favorites", {
+        const response = await axios.get("https://mern-recipe-app-backend-production.up.railway.app/api/user/favorites", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const ids = response.data.favorites.map((fav) => fav.idMeal); // Replace '_id' with the correct key if different

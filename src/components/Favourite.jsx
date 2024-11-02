@@ -20,7 +20,7 @@ function Favourite() {
 
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5000/api/user/favorites", {
+        const response = await axios.get("https://mern-recipe-app-backend-production.up.railway.app/api/user/favorites", {
           headers: { Authorization: `Bearer ${token}` },
         });
         // Extract only the recipe IDs from the response data

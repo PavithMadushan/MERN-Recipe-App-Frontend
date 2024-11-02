@@ -96,7 +96,7 @@ function Login() {
     } else {
       try {
         // Send a POST request to login the user
-        const response = await axios.post("http://localhost:5000/api/user/login", {
+        const response = await axios.post("https://mern-recipe-app-backend-production.up.railway.app/api/user/login", {
           email: form.email,
           password: form.password,
         });

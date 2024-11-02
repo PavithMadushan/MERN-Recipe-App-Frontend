@@ -27,7 +27,7 @@ function MealCard({ meal,isFavorite: initialFavoriteStatus,allowToggle = true })
 
     try {
       const response=await axios.post(
-        "http://localhost:5000/api/user/add",
+        "https://mern-recipe-app-backend-production.up.railway.app/api/user/add",
         { recipeId: meal.idMeal },
         {
           headers: {
